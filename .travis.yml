@@ -7,7 +7,7 @@ branches:
 notifications:
   email:
     recipients:
-      - xxx@upm.es
+      - alu0100819847@ull.edu.es
 script:
   #Test unitario y de integracion con cobertura
   - mvn org.jacoco:jacoco-maven-plugin:prepare-agent verify
