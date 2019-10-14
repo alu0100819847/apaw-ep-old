@@ -1,6 +1,7 @@
 package es.upm.miw.apaw_ep_themes.dtos;
 
 import es.upm.miw.apaw_ep_themes.entities.Video;
+import es.upm.miw.apaw_ep_themes.exceptions.BadRequestException;
 
 public class VideoDto {
 
@@ -46,6 +47,12 @@ public class VideoDto {
 
     public void setReaction(int reaction){
         this.reaction = reaction;
+    }
+
+    public void validate() {
+        if (this.name.length() == 0) {
+            throw new BadRequestException("Incomplete ContactDto. ");
+        }
     }
 
     @Override
