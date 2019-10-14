@@ -11,6 +11,8 @@ public class ContactDto {
 
     private int telephone;
 
+    public ContactDto(){}
+
     public ContactDto(String email, int telephone){
         this.email = email;
         this.telephone = telephone;
