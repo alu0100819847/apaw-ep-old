@@ -13,6 +13,8 @@ public class VideoDto {
 
     Boolean publicVideo;
 
+    public VideoDto(){ }
+
     public VideoDto(String name, Boolean publicVideo, int reaction){
         this.name = name;
         this.publicVideo = publicVideo;
