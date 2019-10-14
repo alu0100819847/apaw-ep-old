@@ -19,7 +19,6 @@ public class Chanel {
 
     private String topic;
 
-    @DBRef
     private List<Video> videos;
 
     public Chanel(String name, String description, String topic){
